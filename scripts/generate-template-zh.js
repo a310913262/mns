@@ -26,4 +26,3 @@ XLSX.utils.book_append_sheet(wb, wsDebts, "Debts");
 
 XLSX.writeFile(wb, path.join(__dirname, '../public/template_zh.xlsx'));
 console.log("Chinese Template created at public/template_zh.xlsx");
-```
