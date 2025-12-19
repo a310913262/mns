@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { Company, Debt, Transaction } from "@/types";
 
+// Cloudflare Pages runs on the Edge runtime; ensure this route is compatible.
+export const runtime = "edge";
+
 export async function POST(req: Request) {
     try {
         const body = await req.json();
